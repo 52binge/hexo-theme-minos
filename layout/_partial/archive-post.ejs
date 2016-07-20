@@ -2,7 +2,7 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <% if(archive) { %>
-        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D'}) %>
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY-MM-DD'}) %>
       <% } else { %>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY MMM D'}) %>
       <% } %>
