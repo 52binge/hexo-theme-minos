@@ -14,18 +14,85 @@
 
 .article-date
   float: left
+  //float: right
+/*
+// add article-author by blair 160724
+.article-time
+  padding-top 0.5em
+  font-size 0.8em
+  text-align center
+  margin-bottom -2.7em
+//  @media mini
+    float right
+    margin-right 1em
+    padding-top 0.1em
+    font-size 0.9em
+  &:before
+    font-family font-icon-family
+    font-size font-size+30
+    content "\f017"
+    font-smoothing()
 
+// add article-author by blair 160724
+.article-author
+  padding 0.3em 4% 0.3em 0
+  text-align right
+  border-bottom 1px solid lighten(color-gray,30%)
+ // @media mini
+     float right
+     border-bottom none
+*/
+.article-category-index
+  float: left
+  margin-left: 8px
+  //color: color-grey
+  color: #939393
+  &:before
+    content: "\2022"
+  span
+    margin-left: 8px
 .article-category
   float: left
   margin-left: 8px
-  color: color-grey
+  //color: color-grey
+  color: #333
   &:before
-    content: "\2022"
+    // add by blair 160724
+    font-family: "FontAwesome";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // add by blair 160724
+    content: "\f07b"
+  span
+    margin-left: 8px
+/*  .article-tag by blair add by 160724 */
+.article-tag
+  float: left
+  margin-left: 8px
+  //color: color-grey
+  color: #333
+  &:before
+    // add by blair 160724
+    font-family: "FontAwesome";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // add by blair 160724
+    content: "\f02c"
   span
     margin-left: 8px
 
 .article-category-link
   margin-left: 8px
+  font-size: 1.2em  // by blair add 160724
+  //color: #2ca6cb
+  color: #2561c2
+
+/* by blair add at 160724 */
+.article-tag-link
+  margin-left: 8px
+  font-size: 1.2em
+  color: #2561c2
+  //color: #2ca6cb
 
 .article-comment-link-wrap
   float: left
@@ -40,10 +107,22 @@
 .article-header
   margin-bottom: 10px
 
+.article-title-index
+  font-size: 1.2em
+  font-weight: 599
+  //width: 98%;
+  //line-height: 150%;
+  color: #444;
+
 .article-title
   font-size: 2em
-  font-weight: 700
-  line-height: line-height-title
+  font-weight: 599
+  //add by blair 0724
+  border-bottom: 2px LightGrey solid;
+  width: 98%;
+  //line-height: 150%;
+  color: #444;
+  //add by blair 0724
 a.article-title
   @extend $link
 
@@ -59,6 +138,16 @@ a.article-title
     font-weight: 600
     line-height: 1.4em
     margin: line-height-title 0
+    // add by blair 0724
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 150%;
+  h11
+    font-weight: 600
+    line-height: 1em
+    margin: line-height-title 0
+    // add by blair 0724
   a
     @extend $link-highlight
   ul, ol, dl
@@ -143,11 +232,27 @@ a.article-title
   padding: line-height 0
   line-height: line-height
   margin: 0
+  float: right
   a
     color: color-grey
+    //color: #2561c2 // by blair 160724
+    //color: #2ca6cb
+    //color: -webkit-link
     text-decoration: none
     &:hover
       color: color-default
+
+// by blair 160724
+.well
+  font-size: 0.85em;
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 
 .article-tag-list-item
   float: left
