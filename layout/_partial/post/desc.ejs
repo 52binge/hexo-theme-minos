@@ -5,9 +5,9 @@
   </h1>
 <% } else if (post.title){ %>
   <% if (index){ %>
-    <h11 itemprop="name">
-      <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><strong><%= post.title %></strong></a>
-      <small class=article-date-index>&nbsp; <%= date(post.date) %></small>
+    <h11 class="desc-index">
+      <%= post.description %>
+      <!--<a class="</strong></a>-->
       <!--<a>
       <div = post.date  </div>
       </a>-->
