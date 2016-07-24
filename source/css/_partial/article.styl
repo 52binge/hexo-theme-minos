@@ -84,9 +84,15 @@ a.article-title
     padding: 10px 0
   blockquote
     font-family: font-default
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
+    margin: 0.65em 0 0.65em 1%;
+    line-height: 1.5
+    padding-left: 1%;
+    border-left: 2px solid #009a61;
+    background: #f6f6f6;
+    //color: #555;
+    //color: #808080;
+    color: #777777;
+    font-size: 1em;
     footer
       font-size: font-size
       margin: line-height 0
@@ -149,7 +155,14 @@ a.article-title
 
 .article-tag-list-link
   &:before
-    content: "#"
+    /*content: "#"*/
+    //margin: 0.65em 0 0.65em 1%;
+    //line-height: 1.5;
+    //padding-left: 1%;
+    font-family: "FontAwesome";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f02c";
 
 #article-nav
   clearfix()
