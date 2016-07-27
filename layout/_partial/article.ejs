@@ -28,7 +28,9 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
-    <%- partial('post/well') %> <!-- by blair add 160724-->
+    <% if (post.categories || post.tags){ %> <!-- by blair add this if sentence at 20160725 -->
+      <%- partial('post/well') %> <!-- by blair add 160724-->
+    <% } %>
     </div>
     <% if (!index && theme.toc && toc(post.content)) { %>
       <div class="article-toc">
